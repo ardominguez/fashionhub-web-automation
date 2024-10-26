@@ -1,0 +1,7 @@
+fashionhub:
+  baseUrl: http://localhost:4000
+  loginPage:
+    validUsername: demouser
+    validPassword: fashion123
+    invalidUsername: invaliduser
+    invalidPassword: invalidpassword
