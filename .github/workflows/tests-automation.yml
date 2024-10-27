@@ -15,9 +15,10 @@ on:
         description: Browser
         type: choice
         options:
-          - chrome
-          - firefox
-          - safari
+          - Chrome
+          - Edge
+          - Firefox
+          - Webkit
 
 jobs:
   playwirght-tests:
