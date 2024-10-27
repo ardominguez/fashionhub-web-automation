@@ -69,15 +69,25 @@ Additionally, you can also run the automated tests on GitHub, using GitHub Actio
  1. Go to https://github.com/ardominguez/fashionhub-web-automation
  2. Go to Actions.
 
+![img_1](https://github.com/user-attachments/assets/2bb8e656-0ed4-4cfd-aaf6-ff6ddbfc15d9)
  3. Select the Running Web FashionHub Tests workflow.
-
+ 
+![img_4](https://github.com/user-attachments/assets/4934ea7a-48a8-4370-9d38-ff044ffa83a3)
  4. Run the workflow by clicking on the Run workflow button.
-
+ 
+![img_5](https://github.com/user-attachments/assets/5cdae58b-f196-4e82-b42d-3399391a068f)
  5. Select the Environment (Production by default), Browser (Chrome by default) and use the branch main(main is used by default) and the select the Run workflow button (green button)
 
+![img_6](https://github.com/user-attachments/assets/e7222089-1089-4ef0-a3a9-e514ee28685a)
  6. The test execution is displayed
 
+![img_7](https://github.com/user-attachments/assets/cff09dd6-b360-4dba-8922-b3f574044d89)
  7. Once execution is complete, select the running job and go to the execution summary.
+ 
+![img_10](https://github.com/user-attachments/assets/8f37969c-77b9-4e1e-b11e-1229b62af98d)
+![img_8](https://github.com/user-attachments/assets/de0d4580-7c6b-4d15-9060-48a99fd299cb)
 
  8. Scroll down to view the generated artifact, then download it.
+![img_9](https://github.com/user-attachments/assets/a0c79cb3-7ecd-40f9-8849-747fc29d8c0e)
+
 
