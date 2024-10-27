@@ -30,14 +30,17 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+
       - name: Run Tests
         run: mvn clean test -Denv=${{ github.event.inputs.environment }} -Dbrowser=${{ github.event.inputs.browser }}
+
       - name: Upload Report
         uses: actions/upload-artifact@v4.4.3
         if: always()
         with:    
           name: Cucumber Report
           path: reports/cucumber-report/*
+
       - name: Upload CSV Report
         uses: actions/upload-artifact@v4.4.3
         if: always()

@@ -57,11 +57,19 @@ mvn clean test -Denv=local -Dbrowser=firefox -Dheadless=false
 - **-Dbrowser**: Sets the browser for tests execution. Allowed Values: [`chrome`, `firefox`, `safari`] Default: chrome
 - **-Dheadless**: Set visible browser for tests execution.: [true, false] Default: true (Not visible)
 
-### Reports Generated
-Upon completion of test execution, a detailed report is generated, capturing test results and insights.
+#### Command Breakdown
+- **-Denv**: Define the environment for tests execution. Allowed Values: [local, staging, production] Default: production
+- **-Dbrowser**: Sets the browser for tests execution. Allowed Values: [chrome, firefox, webkit] Default: chrome
+- **-Dheadless**: Set visible mode for tests execution.: [true, false] Default: true (Invisible)
 
-- **Cucumber Report**: The report can be accessed at the following path: `reports/cucumber-report/web-report.html`. This HTML report provides a clear overview of test outcomes, including passed, failed, and skipped scenarios, for easy review and debugging.
-- **Open PR Reports**: This reports can be accessed at the following path `reports/<repository>_pull_request.csv`. The suite will generate a csv file for each repository included in the Example section in the feature file [retrieve_open_pull_requests.feature](src/test/resources/features/web/retrieve_open_pull_requests.feature)
+### Reports Generated
+
+- **Allure Report**: The test execution report can be accessed executing the following command:
+```bash
+mvn allure:serve
+```
+- **Open PR Reports**: This reports can be accessed at the following path ``reports/<repository>_pull_request.csv``. The suite will generate a csv file for each repository included in the Example section in the feature file [retrieve_open_pull_requests.feature](src/test/resources/features/web/retrieve_open_pull_requests.feature)
+
 - Additionally, screenshots captured by the automated tests are saved in the images folder. The images can be accessed at the following path: `reports/images/<scenario_name.png>`.
 
 ## Running Tests in GitHub Actions
