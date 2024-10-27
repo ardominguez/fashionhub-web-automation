@@ -1,5 +1,6 @@
 package com.fashionhub.fwk.web.hook;
 
+import com.fashionhub.fwk.web.utils.FileUtils;
 import com.fashionhub.fwk.web.utils.ScreenshotUtil;
 import io.cucumber.java.*;
 import lombok.Getter;
@@ -17,7 +18,8 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario) {
-        byte[] sourcePath = ScreenshotUtil.saveScreenshotFile(testContext.getPage(), UUID.randomUUID().toString());
+        String imageName = FileUtils.formatScenarioName(scenario.getName());
+        byte[] sourcePath = ScreenshotUtil.saveScreenshotFile(testContext.getPage(), imageName);
         scenario.attach(sourcePath, "image/png",  scenario.getName());
 
         testContext.getBrowser().close();
