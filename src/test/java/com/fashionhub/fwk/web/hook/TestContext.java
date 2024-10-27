@@ -1,6 +1,7 @@
 package com.fashionhub.fwk.web.hook;
 
 import com.fashionhub.fwk.web.factory.BrowserFactory;
+import com.fashionhub.fwk.web.factory.ParallelExecutionHandler;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
@@ -17,8 +18,11 @@ public class TestContext {
     public TestContext() {
         Playwright playwright = Playwright.create();
         browser = BrowserFactory.create(playwright, getSelectedBrowser());
-        browserContext = browser.newContext();
-        page = browserContext.newPage();
+
+        ParallelExecutionHandler.addParallelExecution(browser);
+
+        browserContext = ParallelExecutionHandler.getBrowserContext();
+        page = ParallelExecutionHandler.getPage();
     }
 
     private String getSelectedBrowser() {

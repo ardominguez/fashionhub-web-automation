@@ -21,6 +21,5 @@ public class Hooks {
         scenario.attach(sourcePath, "image/png",  scenario.getName());
 
         testContext.getBrowser().close();
-        testContext.getPage().close();
     }
 }

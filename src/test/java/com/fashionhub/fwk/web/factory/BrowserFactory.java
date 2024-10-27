@@ -9,18 +9,24 @@ public class BrowserFactory {
 
     private BrowserFactory() {}
 
-    public static Browser create(Playwright playwright, String browser) {
-        BrowserType browserType = switch (browser) {
-            case "firefox" -> playwright.firefox();
-            case "safari" -> playwright.webkit();
+    public static Browser create(Playwright playwright, String browserName) {
+        BrowserEnum browserEnum = BrowserEnum.fromName(browserName);
+
+        BrowserType browserType = switch (browserEnum) {
+            case FIREFOX -> playwright.firefox();
+            case WEBKIT -> playwright.webkit();
             default -> playwright.chromium();
         };
 
-        return browserType.launch(buildLunchOptions());
+        return browserType.launch(buildLunchOptions(browserEnum));
     }
 
-    public static BrowserType.LaunchOptions buildLunchOptions() {
-        return new BrowserType.LaunchOptions().setHeadless(getHeadless());
+    public static BrowserType.LaunchOptions buildLunchOptions(BrowserEnum browserEnum) {
+        BrowserType.LaunchOptions options = new BrowserType.LaunchOptions().setHeadless(getHeadless());
+        if(StringUtils.equals("chromium", browserEnum.getEngine())) {
+            options.setChannel(browserEnum.getChannel());
+        }
+        return options;
     }
 
     private static boolean getHeadless() {

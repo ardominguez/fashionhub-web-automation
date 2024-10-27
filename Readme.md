@@ -53,8 +53,8 @@ mvn clean test -Denv=local -Dbrowser=firefox -Dheadless=false
 ```
 
 #### Command Breakdown
-- **-Denv**: Define the environment for tests execution. Allowed Values: [`local`, `staging`, `production`] Default: production
-- **-Dbrowser**: Sets the browser for tests execution. Allowed Values: [`chrome`, `firefox`, `safari`] Default: chrome
+- **-Denv**: Define the environment for tests execution. Allowed Values: [`local`, `staging`, `production`] Default: `production`
+- **-Dbrowser**: Sets the browser name for tests execution. Allowed Values: [`Chrome`, `Edge`, `Firefox`, `Webkit`] Default: `Chrome`
 - **-Dheadless**: Set visible browser for tests execution.: [true, false] Default: true (Not visible)
 
 #### Command Breakdown
