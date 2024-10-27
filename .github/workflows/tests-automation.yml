@@ -17,7 +17,7 @@ on:
         options:
           - chrome
           - firefox
-          - webkit
+          - safari
 
 jobs:
   run-tests:
