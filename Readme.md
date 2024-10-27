@@ -17,7 +17,7 @@ and Playwright for browser automation.
         │    ├── steps                          # Step definitions for Cucumber feature files │ 
         │    ├── pages                          # Page Object Models (POM) representing UI pages │ 
         │    └── utils                          # Utility classes and methods 
-        │    RunnerWebTests.java                # Utility classes and methods 
+        │    RunnerWebTests.java                # Framework suite runner 
         └── resources 
             ├── features 
             │    └── web                        # Cucumber feature files
@@ -50,9 +50,9 @@ mvn clean test -Denv=local -Dbrowser=firefox -Dheadless=false
 ```
 
 #### Command Breakdown
-- **-Denv**: Define the environment for tests execution. Allowed Values: [local, staging, production] Default: production
-- **-Dbrowser**: Sets the browser for tests execution. Allowed Values: [chrome, firefox, safari] Default: chrome
-- **-Dheadless**: Set visible mode for tests execution.: [true, false] Default: true (Invisible)
+- **-Denv**: Define the environment for tests execution. Allowed Values: [`local`, `staging`, `production`] Default: production
+- **-Dbrowser**: Sets the browser for tests execution. Allowed Values: [`chrome`, `firefox`, `safari`] Default: chrome
+- **-Dheadless**: Set visible browser for tests execution.: [true, false] Default: true (Not visible)
 
 ### Reports Generated
 Upon completion of test execution, a detailed report is generated, capturing test results and insights.
@@ -62,3 +62,12 @@ Upon completion of test execution, a detailed report is generated, capturing tes
 
 
 ## Running Tests in GitHub Actions
+Additionally, you can also run the automated tests on GitHub, using GitHub Actions. To do that:
+ 1. Go to https://github.com/ardominguez/fashionhub-web-automation
+ 2. Go to Actions.
+ 3. Select the Running Web FashionHub Automated Tests workflow.
+ 4. Run the workflow by clicking on the Run workflow button.
+ 5. Select the Environment (Production by default), Browser (Chrome by default) and use the branch main(main is used by default)
+
+
+

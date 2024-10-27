@@ -1,4 +1,4 @@
-name: Run Tests
+name: Running Web FashionHub Automated Tests
 run-name: "[${{ github.event.inputs.environment }}] [${{ github.event.inputs.browser }}] Web Automation Tests"
 on:
   workflow_dispatch:
