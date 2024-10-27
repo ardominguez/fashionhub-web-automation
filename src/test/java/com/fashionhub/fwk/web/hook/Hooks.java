@@ -5,8 +5,6 @@ import com.fashionhub.fwk.web.utils.ScreenshotUtil;
 import io.cucumber.java.*;
 import lombok.Getter;
 
-import java.util.UUID;
-
 @Getter
 public class Hooks {
 

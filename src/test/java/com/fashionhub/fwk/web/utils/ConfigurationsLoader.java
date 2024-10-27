@@ -1,13 +1,11 @@
 package com.fashionhub.fwk.web.utils;
 
-import org.apache.commons.lang3.StringUtils;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.InputStream;
 import java.util.Map;
 import java.util.Objects;
 
-import static org.apache.commons.lang3.StringUtils.defaultString;
 
 public class ConfigurationsLoader {
 
