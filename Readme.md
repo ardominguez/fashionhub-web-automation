@@ -7,7 +7,6 @@ and Playwright for browser automation.
 ## Prerequisites
 - Java 17
 - Maven (for build and dependency management)
-- **Also, to run the tests locally, ensure that the browser in which the tests will execute is installed. The framework currently supports local test execution on Chrome, Firefox, and Safari**.
 
 ## Project Structure
     .github                                     # Github action definition file
