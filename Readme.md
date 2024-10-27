@@ -65,9 +65,25 @@ Upon completion of test execution, a detailed report is generated, capturing tes
 Additionally, you can also run the automated tests on GitHub, using GitHub Actions. To do that:
  1. Go to https://github.com/ardominguez/fashionhub-web-automation
  2. Go to Actions.
- 3. Select the Running Web FashionHub Automated Tests workflow.
+
+![img_1.png](img_1.png)
+ 3. Select the Running Web FashionHub Tests workflow.
+
+![img_4.png](img_4.png)
  4. Run the workflow by clicking on the Run workflow button.
- 5. Select the Environment (Production by default), Browser (Chrome by default) and use the branch main(main is used by default)
 
+![img_5.png](img_5.png)
+ 5. Select the Environment (Production by default), Browser (Chrome by default) and use the branch main(main is used by default) and the select the Run workflow button (green button)
 
+![img_6.png](img_6.png)
 
+ 6. The test execution is displayed
+
+![img_7.png](img_7.png)
+ 7. Once execution is complete, select the running job and go to the execution summary.
+
+![img_10.png](img_10.png)
+![img_8.png](img_8.png)
+ 8. Scroll down to view the generated artifact, then download it.
+
+![img_9.png](img_9.png)
