@@ -1,7 +1,0 @@
-fashionhub:
-  baseUrl: https://pocketaces2.github.io
-  loginPage:
-    validUsername: demouser
-    validPassword: fashion123
-    invalidUsername: invaliduser
-    invalidPassword: invalidpassword
