@@ -49,18 +49,19 @@ docker run -p 4000:4000 pocketaces2/fashionhub-demo-app:latest
 ### Running Tests with Custom Parameters
 To run tests with specific configurations, you can use the following command:
 ```bash
-mvn clean test -Denv=local -Dbrowser=firefox -Dheadless=false
+mvn clean test -Denv=local -Dbrowser=Firefox -Dheadless=false
 ```
 
 #### Command Breakdown
-- **-Denv**: Define the environment for tests execution. Allowed Values: [`local`, `staging`, `production`] Default: `production`
-- **-Dbrowser**: Sets the browser name for tests execution. Allowed Values: [`Chrome`, `Edge`, `Firefox`, `Webkit`] Default: `Chrome`
-- **-Dheadless**: Set visible browser for tests execution.: [true, false] Default: true (Not visible)
-
-#### Command Breakdown
-- **-Denv**: Define the environment for tests execution. Allowed Values: [local, staging, production] Default: production
-- **-Dbrowser**: Sets the browser for tests execution. Allowed Values: [chrome, firefox, webkit] Default: chrome
-- **-Dheadless**: Set visible mode for tests execution.: [true, false] Default: true (Invisible)
+- **-Denv**: Define the environment for tests execution. 
+  - Allowed: `local`, `staging`, `production`
+  - Default: `production`
+- **-Dbrowser**: Sets the browser name for tests execution. 
+  - Allowed: `Chrome`, `Edge`, `Firefox`, `Webkit`
+  - Default: `Chrome`
+- **-Dheadless**: Set visible browser for tests execution.: 
+  - Allowed: `true`, `false`
+  - Default: `true` (Not visible)
 
 ### Reports Generated
 
@@ -87,15 +88,13 @@ Additionally, you can also run the automated tests on GitHub, using GitHub Actio
  5. Select the Environment (Production by default), Browser (Chrome by default) and use the branch main(main is used by default) and the select the Run workflow button (green button)
 
 ![img_6](https://github.com/user-attachments/assets/e7222089-1089-4ef0-a3a9-e514ee28685a)
- 6. The test execution is displayed
+ 6. The test execution is displayed with the environment and the browser selected.
+ 7. Once execution is complete, select the running job and go to the execution summary. 
+ 8. Scroll down to view the generated artifact, then download it. 
+ 9. Also when the execution is completed, automatically is launched a GitHub page build with Allure report result.
 
-![img_7](https://github.com/user-attachments/assets/cff09dd6-b360-4dba-8922-b3f574044d89)
- 7. Once execution is complete, select the running job and go to the execution summary.
- 
-![img_10](https://github.com/user-attachments/assets/8f37969c-77b9-4e1e-b11e-1229b62af98d)
-![img_8](https://github.com/user-attachments/assets/de0d4580-7c6b-4d15-9060-48a99fd299cb)
 
- 8. Scroll down to view the generated artifact, then download it.
-![img_9](https://github.com/user-attachments/assets/a0c79cb3-7ecd-40f9-8849-747fc29d8c0e)
+
+
 
 

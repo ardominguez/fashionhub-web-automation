@@ -32,6 +32,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+          cache: 'maven'
 
       - name: Run Tests
         run: mvn clean test -Denv=${{ github.event.inputs.environment }} -Dbrowser=${{ github.event.inputs.browser }}
