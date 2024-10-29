@@ -2,10 +2,8 @@ package com.fashionhub.fwk.web.steps;
 
 import com.fashionhub.fwk.web.pages.fashionhub.AccountPage;
 import com.fashionhub.fwk.web.pages.fashionhub.LoginPage;
-import com.fashionhub.fwk.web.hook.Hooks;
 import com.fashionhub.fwk.web.hook.TestContext;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -37,7 +35,7 @@ public class CustomerLoginSteps {
         loginPage.fillLoginFormWithInvalidCredentials();
     }
 
-    @And("The customer clicks the login button")
+    @When("The customer clicks the login button")
     public void the_customer_clicks_the_login_button() {
         loginPage.submitLogin();
     }
