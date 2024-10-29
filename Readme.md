@@ -88,9 +88,20 @@ Additionally, you can also run the automated tests on GitHub, using GitHub Actio
 
 ![img_6](https://github.com/user-attachments/assets/e7222089-1089-4ef0-a3a9-e514ee28685a)
  6. The test execution is displayed with the environment and the browser selected.
- 7. Once execution is complete, select the running job and go to the execution summary. 
- 8. Scroll down to view the generated artifact, then download it. 
- 9. Also when the execution is completed, automatically is launched a GitHub page build with Allure report result.
+ 
+<img width="1499" alt="Captura de pantalla 2024-10-27 a las 22 43 19" src="https://github.com/user-attachments/assets/4dd88ac4-da7e-42b9-a2cc-af5e43995fdb">
+ 7. After execution completes, select the running job and navigate to the execution summary. Scroll down to access the "Open PRs" CSV report, available for download as an artifact.
+ 
+ <img width="1326" alt="Captura de pantalla 2024-10-27 a las 22 47 18" src="https://github.com/user-attachments/assets/786ad384-3ffa-467e-8337-e21e885a58ad">
+ 8. Also, when the execution is completed, a GitHub page build with the Allure report result is automatically launched.
+ <img width="1497" alt="Captura de pantalla 2024-10-27 a las 22 44 55" src="https://github.com/user-attachments/assets/363556cd-a809-4770-8178-79ad56565c14">
+ 
+ <img width="1329" alt="Captura de pantalla 2024-10-27 a las 22 48 40" src="https://github.com/user-attachments/assets/7bfeaa98-eb99-416c-b283-eba6b11addcc">
+ 
+ <img width="1336" alt="Captura de pantalla 2024-10-27 a las 22 49 41" src="https://github.com/user-attachments/assets/64b1abfc-0ad7-462b-add3-4adb8eb1f534">
+
+
+
 
 
 
