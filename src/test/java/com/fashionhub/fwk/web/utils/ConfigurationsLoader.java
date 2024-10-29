@@ -12,7 +12,7 @@ public class ConfigurationsLoader {
     public static Map<String, Object> config;
 
     static {
-        String configFileName = String.format("configurations-%s.yml", getEnvironment());
+        String configFileName = String.format("config/configurations-%s.yml", getEnvironment());
 
         Yaml yaml = new Yaml();
         try (InputStream in = ConfigurationsLoader.class.getClassLoader().getResourceAsStream(configFileName)) {

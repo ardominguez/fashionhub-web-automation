@@ -35,14 +35,6 @@ public class LoginPage extends BasePage {
         fillPassword(invalidPassword);
     }
 
-    public void fillUsername(String username) {
-        page.fill(LoginPageLocators.USERNAME_INPUT, username);
-    }
-
-    public void fillPassword(String password) {
-        page.fill(LoginPageLocators.PASSWORD_INPUT, password);
-    }
-
     public void submitLogin() {
         page.click(LoginPageLocators.LOGIN_INPUT_BUTTON);
     }
@@ -54,5 +46,13 @@ public class LoginPage extends BasePage {
     public boolean errorMessageIsDisplayed() {
         String errorMessage = page.locator(LoginPageLocators.INVALID_CREDENTIALS_ERROR_MESSAGE_DIV).textContent();
         return StringUtils.equals(errorMessage, "Invalid username or password.");
+    }
+
+    private void fillUsername(String username) {
+        page.fill(LoginPageLocators.USERNAME_INPUT, username);
+    }
+
+    private void fillPassword(String password) {
+        page.fill(LoginPageLocators.PASSWORD_INPUT, password);
     }
 }
